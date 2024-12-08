@@ -36,7 +36,4 @@ class CashRegister(private var change: Change,
                 else INSUFFICIENT_CHANGE_PRESENT
         }
     }
-
-
-
 }
