@@ -8,6 +8,7 @@ import strategy.ChangeStrategy
  * The CashRegister class holds the logic for performing transactions.
  *
  * @param change The change that the CashRegister is holding.
+ * @param changeStrategy the strategy to use for change collection
  */
 class CashRegister(private var change: Change,
                     private val changeStrategy: ChangeStrategy
