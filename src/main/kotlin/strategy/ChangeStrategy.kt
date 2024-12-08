@@ -1,3 +1,5 @@
+package strategy
+
 import money.Change
 
 interface ChangeStrategy {

@@ -2,7 +2,7 @@ import money.Change
 import exception.TransactionException
 import exception.TransactionException.Companion.AMOUNT_GIVEN_LESS_THAN_PRICE
 import exception.TransactionException.Companion.INSUFFICIENT_CHANGE_PRESENT
-import money.Coin
+import strategy.ChangeStrategy
 
 /**
  * The CashRegister class holds the logic for performing transactions.
@@ -10,7 +10,8 @@ import money.Coin
  * @param change The change that the CashRegister is holding.
  */
 class CashRegister(private var change: Change,
-                    private val changeStrategy: ChangeStrategy) {
+                    private val changeStrategy: ChangeStrategy
+) {
 
     /**
      * Performs a transaction for a product/products with a certain price and a given amount.

@@ -1,3 +1,6 @@
+package strategy
+
+import MonetaryElement
 import exception.TransactionException.Companion.INSUFFICIENT_CHANGE_PRESENT
 import money.Change
 
